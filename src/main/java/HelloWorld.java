@@ -9,15 +9,6 @@ public class HelloWorld implements SparkApplication {
 
 	@Override
 	public void init() {
-		get("/hello", (req, res) -> "<!DOCTYPE html>
-<html>
-<body style="background-color:LightGray;">
-<h1 style="color:black; text-align:center">Test App</h1>
-<p>Application Status
-<a href="https://www.w3schools.com/html/"> Nagios Output</a></p>
-<p>DB Status <a href="https://www.w3schools.com/html/">Nagios Output</a></p>
-</body>
-</html>
-");
+		get("/hello", (req, res) -> "<h1> THis is test page</h1>");
 	}
 }
